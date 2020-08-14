@@ -6,6 +6,12 @@ to watch my work:
 - type in project directory 'npm install'
 - than 'npm run start'
 
-this app had few functionalities, after you clicked 'Send SMS' 
-you must restart app to see another options 
+This app had few functionalities:
+
+- Click 'Send SMS' to see green table (after you click 'Send SMS' 
+you must restart the app to see other options)
+- do not touch anything if you want to see a red table
+
+Thank you for your attention, have a nice experie
+
 
