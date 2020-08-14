@@ -1,7 +1,5 @@
 import React from 'react';
 
-import '../../scss/main.scss';
-
 function Failure(props) {
   return (
     <section className='Failure'>

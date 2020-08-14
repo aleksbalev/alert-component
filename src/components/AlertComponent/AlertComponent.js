@@ -1,16 +1,19 @@
 import React, {useEffect, useState} from 'react';
 
-import Success from '../Success/success';
-import Faulire from '../Failure/failure';
-import Waiting from '../Waiting/waiting';
+import Success from './Success/success';
+import Faulire from './Failure/failure';
+import Waiting from './Waiting/waiting';
 
-function Alert() {
+import '../../styles/scss/main.scss';
+
+function AlertComponent() {
   const [seconds, setSeconds] = useState(5);
   const [sended, setSended] = useState(false);
 
   const setInitialState = (evt) => {
     evt.preventDefault();
     setSeconds(5);
+    setSended(false);
   };
 
   const handleClickSend = () => {
@@ -32,7 +35,7 @@ function Alert() {
   return (
     <div className='Alert'>
       {sended ? (
-        <Success />
+        <Success click={setInitialState} />
       ) : seconds === 0 && sended === false ? (
         <Faulire click={setInitialState} />
       ) : (
@@ -42,4 +45,4 @@ function Alert() {
   );
 }
 
-export default Alert;
+export default AlertComponent;

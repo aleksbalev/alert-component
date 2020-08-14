@@ -1,0 +1,7 @@
+@import './variables';
+@import './mixins';
+
+@import '../../components/AlertComponent/alertComponent';
+@import '../../components/AlertComponent/Success/success';
+@import '../../components/AlertComponent/Failure/failure';
+@import '../../components/AlertComponent/Waiting/waiting';

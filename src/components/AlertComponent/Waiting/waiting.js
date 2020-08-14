@@ -1,7 +1,5 @@
 import React from 'react';
 
-import '../../scss/main.scss';
-
 function Waiting(props) {
   return (
     <section className='Waiting'>
