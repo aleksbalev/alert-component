@@ -1,0 +1,48 @@
+.Success {
+  @include table;
+  display: flex;
+  align-items: center;
+
+  background-color: $success-bgc;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to right,
+        $success-ac 5px, $success-bgc 5px 100%);
+  }
+}
+
+.Success-title {
+  @include title;
+  margin: 0 0 0 20px;
+
+  color: $success-ac;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 50px;
+  }
+}
+
+.Success-checkmark-wrapper {
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 50px;
+  }
+}
+
+.Success-checkmark {
+  position: absolute;
+  width: 25px;
+  height: 22px;
+  fill: #ffffff;
+}
+
+.Success-circle {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  fill: $success-ac;
+}

@@ -1,0 +1,93 @@
+.Failure {
+  @include table;
+  display: flex;
+  align-items: center;
+
+  background-color: $failure-bgc;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to right,
+        $failure-ac 5px, $failure-bgc 5px 100%);
+  }
+}
+
+.Failure-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 50px;
+  }
+}
+
+.Failure-title {
+  @include title;
+  padding: 0;
+  margin: 0 0 5px 0;
+
+  color: $failure-ac
+}
+
+.Failure-times-wrapper {
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 50px;
+  }
+}
+
+.Failure-circle {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  fill: $failure-ac;
+}
+
+.Failure-times {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  fill: #ffffff;
+}
+
+.Failure-try-again-wrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  span {
+    display: inline-block;
+    border-bottom: 1px solid $link-color;
+  }
+
+  @media (min-width: $tablet-width) {
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.Failure-again-icon {
+  padding-top: 3px;
+  padding-right: 10px;
+  width: 13px;
+  height: 13px;
+  fill: $link-color;
+}
+
+.Failure-link {
+  margin: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: $link-color;
+}
