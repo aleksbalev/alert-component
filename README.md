@@ -15,4 +15,4 @@ you must restart the page or click 'Požadavek byl potvrzen' to see other option
 
 Mobile size starts from 320px.
 
-Thank you for your attention, have a nice experie
+Thank you for your attention, have a nice experience
