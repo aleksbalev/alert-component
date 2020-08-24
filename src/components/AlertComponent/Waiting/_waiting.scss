@@ -1,4 +1,4 @@
-.Waiting {
+.waiting {
   @include table;
   padding: 30px 0;
   display: flex;
@@ -20,7 +20,7 @@
   }
 }
 
-.Waiting-timer {
+.waiting__timer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,7 +41,7 @@
   }
 }
 
-.Waiting-text-wrapper {
+.waiting__text-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,36 +52,39 @@
   }
 }
 
-.Waiting-title {
+.waiting__title {
   @include title;
   margin: 0 0 10px 0;
 
   color: $waiting-ac;
 }
 
-.Waiting-text-span {
+.waiting__text-span {
   margin-left: 5px;
 }
 
-.Waiting-link {
+.waiting__link {
   cursor: pointer;
   text-decoration: none;
   color: $link-color;
 
+  &:focus {
+    opacity: 0.6;
+  }
+
   &-span {
     display: inline-block;
     border-bottom: 1px solid $link-color;
-  }
-
-  @media (min-width: $tablet-width) {
-
-    &:hover,
-    &:focus {
-      opacity: 0.6;
-    }
 
     &:active {
       opacity: 0.3;
+    }
+
+    @media (min-width: $tablet-width) {
+
+      &:hover {
+        opacity: 0.6;
+      }
     }
   }
 }

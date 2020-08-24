@@ -1,4 +1,12 @@
-.Alert {
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.alert {
   position: absolute;
   bottom: 0;
   left: 0;

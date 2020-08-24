@@ -1,4 +1,4 @@
-.Success {
+.success {
   @include table;
   display: flex;
   align-items: center;
@@ -11,7 +11,7 @@
   }
 }
 
-.Success-title {
+.success__title {
   @include title;
   margin: 0 0 0 20px;
 
@@ -23,7 +23,7 @@
   }
 }
 
-.Success-checkmark-wrapper {
+.success__checkmark-wrapper {
   margin-left: 20px;
   display: flex;
   justify-content: center;
@@ -34,14 +34,14 @@
   }
 }
 
-.Success-checkmark {
+.success__checkmark {
   position: absolute;
   width: 25px;
   height: 22px;
   fill: #ffffff;
 }
 
-.Success-circle {
+.success__circle {
   position: relative;
   width: 42px;
   height: 42px;

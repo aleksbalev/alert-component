@@ -10,8 +10,7 @@ function AlertComponent() {
   const [seconds, setSeconds] = useState(5);
   const [sended, setSended] = useState(false);
 
-  const setInitialState = (evt) => {
-    evt.preventDefault();
+  const setInitialState = () => {
     setSeconds(5);
     setSended(false);
   };
@@ -33,7 +32,7 @@ function AlertComponent() {
   });
 
   return (
-    <div className='Alert'>
+    <div className='alert'>
       {sended ? (
         <Success click={setInitialState} />
       ) : seconds === 0 && sended === false ? (
